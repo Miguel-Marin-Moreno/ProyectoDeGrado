@@ -1,0 +1,71 @@
+/* Estilos para la página de información */
+.informacion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .informacion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%; /* Ajusta el ancho según tu preferencia */
+  }
+  
+  .tecnologia-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .tecnologia-item img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tecnologia-item h2 {
+    color: #ff0; /* Color amarillo */
+    margin-bottom: 10px;
+  }
+  
+  .tecnologia-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .informacion-content {
+      width: 100%;
+    }
+  
+    .tecnologia-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .tecnologia-item img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  }
+  

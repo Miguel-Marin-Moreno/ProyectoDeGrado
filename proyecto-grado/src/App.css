@@ -1,0 +1,150 @@
+/* Reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #ff0;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.login-btn, .register-btn {
+  background-color: #ff0;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover, .register-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Content styling */
+.content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Highlight the word "Ai" in yellow */
+.highlight {
+  color: #ff0;
+}
+
+/* Description styling */
+.description {
+  text-align: left;
+  max-width: 50%;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Image and button container */
+.image-and-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Mueve la moto y el botón a la derecha */
+}
+
+.image-container {
+  margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+.image-container img {
+  width: 300px; /* Ajusta el tamaño de la motocicleta si es necesario */
+}
+
+/* Button styling */
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Mueve el botón a la derecha */
+}
+
+.continue-btn {
+  background-color: #ff0;
+  border: none;
+  padding: 15px 30px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background-color: #fff;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .description {
+    max-width: 100%;
+  }
+
+  .nav-links {
+    margin-left: 0;
+  }
+
+  .image-container img {
+    width: 100px; /* Cambia el tamaño de la moto en pantallas pequeñas */
+  }
+}
+
+

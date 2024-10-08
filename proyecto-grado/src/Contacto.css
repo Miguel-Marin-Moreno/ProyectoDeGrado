@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #aaa;
+  }
+  
+  .contacto-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre el formulario y la información */
+    align-items: flex-start;
+    width: 60%; /* Ajusta el ancho del contenido */
+  }
+  
+  /* Sección de contacto */
+  .contacto-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .contacto-info p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .email {
+    color: #ff0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .email:hover {
+    text-decoration: underline;
+  }
+  
+  /* Formulario de contacto */
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ajusta el ancho del formulario */
+  }
+  
+  .contacto-form input,
+  .contacto-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contacto-form textarea {
+    height: 150px;
+  }
+  
+  .btn-enviar {
+    background-color: #ff0;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Responsivo para móviles */
+  @media (max-width: 768px) {
+    .contacto-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contacto-form {
+      width: 100%; /* Formulario ocupa todo el ancho en móviles */
+    }
+  
+    .contacto-info {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  
